@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*
+    這是頁面的reset使用，如果沒有將這個內值歸零的話，
+    頁面的邊邊都會有預設空白
+    */
+}
+
+h1 {
+    color: red;
+    font-size: 50px;
+
+}
+
+nav {
+    background-color: orange;
+    font-size: 0px;
+    text-align: center;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    display: inline-block;
+    /*
+    inline:當你看到有些html標籤，你沒特別設定，他會連在上一個tag後面，就是共享空間的tag. ex:<a>
+    block:當你沒特別設定，他會自己佔整個一條線，其他的tag無法跟他共享空間. ex: <h1>
+    因此tag有什麼特性，你其實很好分辨，
+    inline的特性，他沒辦法設定寬高度
+    block則是有長寬高度可以設定
+    所以如果我希望inline特性的tag也要有block的特性，我這個時候可以用display:inline-block
+    如果我希望block特性的tag要變成inline的特性，我就可以這樣寫 display: inline
+    如果希望inline特性的tag要變成block的特性,我就可以寫成display:block
+    */
+    font-size: 25px;
+    padding: 5px 16px;
+    background-color:black;
+    transition: 1s;
+}
+
+nav a:hover {
+    background-color: blue;
+}
+
+div {
+    width:320px;
+    border:2px solid grey;
+    padding:10px;
+    background-color:rgb(245, 227, 157);
+    font-size:30px;
+    color:green;
+    line-height:1.25;
+    height:400px;
+
+}
